@@ -52,5 +52,16 @@ button.addEventListener('click', () => {
     }
 )
 
+const allSquares = document.querySelectorAll(".square");
+allSquares.forEach(square => {
+    square.addEventListener('mouseenter', () => {
+        square.style.backgroundColor = getRandomRgbColor();
+    })
+
+    square.addEventListener('mouseleave', () => {
+        square.style.backgroundColor = getRandomRgbColor();
+    })
+})
+
 
 
