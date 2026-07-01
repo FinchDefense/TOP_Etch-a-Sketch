@@ -9,6 +9,7 @@ body {
 
 button {
     font-weight: 900;
+    padding: 50px;
 }
 
 
@@ -19,8 +20,8 @@ button {
     flex-wrap: wrap;
 
     box-sizing: border-box;
-    width:50vw;
-    height: 50vw
+    width:40vw;
+    height: 40vw
 }
 
 .square {
