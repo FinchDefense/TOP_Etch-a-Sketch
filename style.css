@@ -9,4 +9,10 @@
     border: 2px solid black;
     flex: 1 0 calc(100% / 16);
     aspect-ratio: 1 / 1;
+
+    transition: background-color 0.3s ease;
+}
+
+.square:hover {
+    background-color: rgb(255 0 0 / 0.5)
 }
