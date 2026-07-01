@@ -1,11 +1,14 @@
 const createSquare = () => {
-    let square = document.createElement("div");
+    const square = document.createElement("div");
     square.classList.add('square');
-    document.body.appendChild(square);
 
     return square;
 }
 
+const fragment = document.createDocumentFragment();
+
 for (let i=0; i<256; i++) {
-    createSquare();
+    const newSquare = createSquare();
+    fragment.appendChild(newSquare);
 }
+
