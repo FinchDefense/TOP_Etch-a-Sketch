@@ -4,6 +4,7 @@ document.body.appendChild(container);
 
 const button = document.createElement("button");
 button.textContent = "NEW GRID";
+document.body.insertBefore(button, container);
 
 
 const createSquare = () => {
@@ -11,8 +12,6 @@ const createSquare = () => {
     square.classList.add('square');
     return square;
 }
-
-newGrid(256);
 
 function promptMe() {
     return prompt("Number of squares per side(max 100): ");
@@ -30,7 +29,7 @@ button.addEventListener('click', () => {
     }
 )
 
-document.body.appendChild(button);
+
 
 function newGrid(sps = 256) {
     const fragment = document.createDocumentFragment();
@@ -40,13 +39,6 @@ function newGrid(sps = 256) {
         const newSquare = createSquare();
         fragment.appendChild(newSquare);
     }
-
-    const elements = document.querySelectorAll;
-    elements.forEach(element => {
-        element.style.width = `$(100 / +sps)vw`;
-        element.style.aspectRatio = '1 / 1';
-    })
-
 
     container.appendChild(fragment);
 }
