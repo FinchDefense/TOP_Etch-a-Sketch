@@ -1,12 +1,17 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vw;
     background-color: #f0f0f0;
 }
 
-
+button {
+    font-weight: 900;
+    min-width: 100px;
+    min-height: 100px;
+}
 
 
 
@@ -22,7 +27,6 @@ body {
 .square {
     box-sizing: border-box;
     border: 2px solid black;
-    flex: 1 0 calc(100% / 16);
     aspect-ratio: 1 / 1;
 
     transition: background-color 0.3s ease;
