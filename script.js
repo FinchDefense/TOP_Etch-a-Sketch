@@ -4,6 +4,8 @@ document.body.appendChild(container);
 
 const button = document.createElement("button");
 button.textContent = "NEW GRID";
+button.style.color = getRandomRgbColor();
+button.style.backgroundColor = getRandomRgbColor();
 document.body.insertBefore(button, container); // Insert button before container
 
 function getRandomRgbColor() {
