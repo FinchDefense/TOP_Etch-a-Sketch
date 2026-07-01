@@ -15,7 +15,7 @@ const createSquare = () => {
 function newGrid(sps = 16) {
     container.replaceChildren(); // clear out the container
 
-    const square_size = 100 / sps; // Each square takes up 1 / sps of the screen width
+    const square_size = 50 / sps; // Each square takes up 1 / sps of the grid width (50 vw)
 
     for (let i=0; i < sps * sps; i++) {
         const square = createSquare();
