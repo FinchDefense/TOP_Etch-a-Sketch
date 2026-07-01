@@ -6,6 +6,14 @@ const button = document.createElement("button");
 button.textContent = "NEW GRID";
 document.body.insertBefore(button, container); // Insert button before container
 
+function getRandomRgbColor() {
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+  
+  return `rgb(${r}, ${g}, ${b})`;
+}
+
 const createSquare = () => {
     const square = document.createElement("div");
     square.classList.add('square');
