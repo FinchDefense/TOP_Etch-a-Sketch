@@ -33,7 +33,7 @@ newGrid(16); // Have a grid ready as soon as web page loads
 
 button.addEventListener('click', () => {
     let sps = -1; // So that it will run the first iteration 
-    while (isNaN(sps) || +sps > 100 || +sps < 0) {
+    while (isNaN(sps) || +sps > 100 || +sps < 1) {
         sps = promptMe();
         if (sps === null) return;
     }
