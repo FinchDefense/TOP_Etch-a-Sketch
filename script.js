@@ -31,6 +31,15 @@ function newGrid(sps = 16) {
         const square = createSquare();
         square.style.width = `${square_size}vw`;
         square.style.aspectRatio = "1 / 1";
+
+        square.addEventListener('mouseenter', () => {
+            square.style.backgroundColor = getRandomRgbColor();
+            })
+
+        square.addEventListener('mouseleave', () => {
+            square.style.backgroundColor = getRandomRgbColor();
+        })
+
         container.appendChild(square);
     }
 }
@@ -52,16 +61,6 @@ button.addEventListener('click', () => {
     }
 )
 
-const allSquares = document.querySelectorAll(".square");
-allSquares.forEach(square => {
-    square.addEventListener('mouseenter', () => {
-        square.style.backgroundColor = getRandomRgbColor();
-    })
-
-    square.addEventListener('mouseleave', () => {
-        square.style.backgroundColor = getRandomRgbColor();
-    })
-})
 
 
 
