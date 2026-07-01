@@ -3,14 +3,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vw;
+    height: 100vh;
     background-color: #f0f0f0;
 }
 
 button {
     font-weight: 900;
-    min-width: 100px;
-    min-height: 100px;
 }
 
 
@@ -21,13 +19,13 @@ button {
     flex-wrap: wrap;
 
     box-sizing: border-box;
-    width: 98vw;
+    width:50vw;
+    height: 50vw
 }
 
 .square {
     box-sizing: border-box;
     border: 2px solid black;
-    aspect-ratio: 1 / 1;
 
     transition: background-color 0.3s ease;
 }
