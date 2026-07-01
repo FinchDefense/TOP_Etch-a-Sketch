@@ -1,7 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+
 .fragment {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+
+    box-sizing: border-box;
+    width: 98vw;
 }
 
 .square {
@@ -14,5 +29,5 @@
 }
 
 .square:hover {
-    background-color: #4169E1;
+    background-color: royalblue;
 }
