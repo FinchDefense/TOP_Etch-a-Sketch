@@ -12,3 +12,4 @@ for (let i=0; i<256; i++) {
     fragment.appendChild(newSquare);
 }
 
+document.body.appendChild(fragment);
